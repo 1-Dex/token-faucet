@@ -25,4 +25,4 @@ Requires min 0.029 ETH to call the functions.
 2. Connect your Metamask or other compatible wallet
 3. Unfold the `drainToken` dropdown & provide the token name, ex. USDT or USDC.
 4. Click the `Write` button & confirm the transaction in your wallet.
-![Screenshot 2023-09-22 210706](https://github.com/Soheilprs/faucet/assets/106927616/732e9b36-abdb-4440-9ec0-0c67b3b58364)
+![Screenshot 2023-09-22 210706](https://github.com/1-Dex/token-faucet/assets/106927616/544ef681-b8e5-49ed-a398-f689cae73c07)
