@@ -1,47 +1,28 @@
-## Getting Started
+# token-faucet
+Testnet ERC20 & Native coins faucet
 
-Create a project using this example:
+> Caution!
+> 1. Can be used by an account only once per 24 hours!
+> 2. The account must have native coins to pay the TX fee!
+> 3. Maximum native coin 0.1 per 24 hours
+> 4. Maximum native token 100 per 24 hours
 
-```bash
-npx thirdweb create --contract --template forge-starter
-```
+## Goerli 
 
-You can start editing the page by modifying `contracts/Contract.sol`.
+Requires min 0.029 ETH to call the functions.
 
-To add functionality to your contracts, you can use the `@thirdweb-dev/contracts` package which provides base contracts and extensions to inherit. The package is already installed with this project. Head to our [Contracts Extensions Docs](https://portal.thirdweb.com/thirdweb-deploy/contract-extensions) to learn more.
+[Faucet Address](https://goerli.etherscan.io/address/0xFF0eE965dE0a4F55AE173f39d1742c9f5DDd59aE#code)
 
-## Building the project
+### Supported tokens: 
 
-After any changes to the contract, run:
+- [USDT](https://goerli.etherscan.io/address/0x60b01F85a32E0556b311893037805D74383A45ff#code) - initial supply: $100M
+- [USDC](https://goerli.etherscan.io/address/0x635417D99Fc0855A81CbFeb17E0271145d3cEcD9#code) - initial supply: $100M
 
-```bash
-npm run build
-# or
-yarn build
-```
+## Using the Faucet
 
-to compile your contracts. This will also detect the [Contracts Extensions Docs](https://portal.thirdweb.com/thirdweb-deploy/contract-extensions) detected on your contract.
-
-## Deploying Contracts
-
-When you're ready to deploy your contracts, just run one of the following command to deploy you're contracts:
-
-```bash
-npm run deploy
-# or
-yarn deploy
-```
-
-## Releasing Contracts
-
-If you want to release a version of your contracts publicly, you can use one of the followings command:
-
-```bash
-npm run release
-# or
-yarn release
-```
-
-## Join our Discord!
-
-For any questions, suggestions, join our discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).
+0. Open the faucet contract of the chain of interest, for example, on Goerly
+1. Open the `Write Contract` tab
+2. Connect your Metamask or other compatible wallet
+3. Unfold the `drainToken` dropdown & provide the token name, ex. USDT or USDC.
+4. Click the `Write` button & confirm the transaction in your wallet.
+![Screenshot 2023-09-22 210706](https://github.com/Soheilprs/faucet/assets/106927616/732e9b36-abdb-4440-9ec0-0c67b3b58364)
